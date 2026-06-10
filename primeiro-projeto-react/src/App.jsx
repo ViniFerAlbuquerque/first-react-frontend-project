@@ -3,7 +3,7 @@ import { v4 as uuid } from 'uuid'
 
 
 
-import { Container, ToDoList, Input, Button, ListItem, Trash, Check } from './styles'
+import { Container, ToDoList, Input, Button, ListItem, Trash, Check, InputArea } from './styles'
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
   function cliqueiNoBotao() {
     if (inputTask) {
     setList([...List, { id: uuid(), task: inputTask, finished: false }])
+    setInputTask('') // limpa o input após adicionar
     }
   }
 
@@ -44,7 +45,7 @@ function App() {
   return (
     <Container>
       <ToDoList>
-        <Input onChange={inputMudou} placeholder="O que tenho para fazer..." />
+        <Input value={inputTask} onChange={inputMudou} placeholder="O que tenho para fazer..." />
         <Button onClick={cliqueiNoBotao}>Adicionar</Button>
 
         <ul>

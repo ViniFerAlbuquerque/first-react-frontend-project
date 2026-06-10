@@ -8,8 +8,24 @@ body {
     outline: none;
 }
 
+@media (max-width: 539px) {
+    body {
+        background-color: #5b609e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+}
+
 * {
     font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+h3 {
+    color: #FFFFFF;
 }
 `
 export default GlobalStyles
