@@ -5,7 +5,9 @@ import { FcEmptyTrash, FcCheckmark } from "react-icons/fc";
 export const InputArea = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
+  width: 100%;
 
   @media (max-width: 539px) {
     flex-direction: column;
@@ -15,19 +17,19 @@ export const InputArea = styled.div`
 
 export const Container = styled.div`
 background: linear-gradient(90deg,rgb(109, 29, 29) 0%, #000000 81.25% );
-width: 100vw;
-height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
+width: 100vw;
+height: 100vh;
 `
 
 export const ToDoList = styled.div`
 background: transparent;
 padding: 50px 90px;
 border-radius: 5px;
-max-width: 600px; /* limita largura máxima */
-width: 90vw; 
+max-width: 550px; /* limita largura máxima */
+width: 100vw; 
 
 ul {
     padding: 0;
@@ -60,6 +62,7 @@ margin-right: 20px;
 padding: 0 10px;
 /* width: 300px;
 max-width: 0; */
+width: 300px;
 min-width: 0;
 flex: 1;
 `
@@ -85,7 +88,7 @@ cursor: pointer;
 }
 
 @media (max-width: 539px) {
-    width: 100%;
+    width: 95%;
 }
 `
 
@@ -110,9 +113,9 @@ li {
 }
 
 @media (max-width: 539px) {
-    flex-direction: column;
-    align-items: flex-start;
-    /* height: auto; */
+    /* flex-direction: column;
+    align-items: flex-start; */
+    height: auto;
     padding: 10px;
 }
 `

@@ -11,17 +11,18 @@ body {
 @media (max-width: 539px) {
     body {
         background-color: #5b609e;
+        background-color: #000000;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: 100vh;
+        height: 100%;
     }
 }
 
 * {
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+    font-size: 29px;
 }
 
 h3 {
